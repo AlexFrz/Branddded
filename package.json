@@ -10,8 +10,17 @@
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
+    "@sanity/block-content-to-react": "^2.0.7",
+    "@sanity/client": "^2.1.0",
+    "@sanity/image-url": "^0.140.19",
+    "groq": "^2.0.9",
+    "gsap": "^3.5.1",
     "next": "^10.0.0",
+    "node-sass": "^5.0.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
-  }
+    "react-dom": "16.13.1",
+    "styled-components": "^5.2.1",
+    "velocity-tracker": "^1.0.1"
+  },
+  "devDependencies": {}
 }
