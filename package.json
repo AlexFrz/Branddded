@@ -13,14 +13,18 @@
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^2.1.0",
     "@sanity/image-url": "^0.140.19",
+    "@zeit/next-sass": "^1.0.1",
     "groq": "^2.0.9",
     "gsap": "^3.5.1",
     "next": "^10.0.0",
-    "node-sass": "^5.0.0",
+    "postcss-preset-env": "^6.7.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "styled-components": "^5.2.1",
     "velocity-tracker": "^1.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "styled-jsx-plugin-sass": "^1.0.0"
+  }
 }

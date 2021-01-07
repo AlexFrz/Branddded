@@ -1,4 +1,5 @@
 import React from "react";
+import { device } from "../styles/device";
 
 function HamburgerMenu() {
   return (
@@ -11,13 +12,31 @@ function HamburgerMenu() {
       <style jsx>
         {`
           button {
-            transform-origin: center;
-            border: none;
+            @media ${device.mobileS} {
+              padding: 10px;
+            }
+            @media ${device.tablet} {
+            }
+            @media ${device.laptop} {
+              transform-origin: center;
+
+              transform: rotate(90deg);
+            }
+            @media ${device.desktop} {
+            }
             background: none;
-            transform: rotate(90deg);
+            border: none;
           }
 
           button span {
+            @media ${device.mobileS} {
+            }
+            @media ${device.tablet} {
+            }
+            @media ${device.laptop} {
+            }
+            @media ${device.desktop} {
+            }
             width: 36px;
             height: 8px;
             display: block;

@@ -1,6 +1,7 @@
 import React from "react";
 import HamburgerMenu from "./HamburgerMenu";
 import Logo from "./Logo";
+import { device } from "../styles/device";
 import {
   useGlobalDispatchContext,
   useGlobalStateContext,
@@ -18,24 +19,54 @@ function TheHeader() {
 
       <style jsx>
         {`
+          @import "../styles/breakpoints.global.css";
+
           .theheader {
-            display: flex;
-            position: fixed;
-            top: 0;
-            left 0;
-            height: 10vh;
-            width: 103vh;
-            justify-content: space-between;
-          }
+            @media ${device.mobileS} {
+              display: flex;
+              justify-content: space-between;
+              height: 10vh;
+              width: 100vw;
+            }
+            @media ${device.tablet} {
+            }
+            @media ${device.laptop} {
+              display: flex;
+              position: fixed;
+              top: 0;
+              left: 0;
+              height: 10vh;
+              width: 103vh;
+              justify-content: space-between;
+            }
+            @media ${device.desktop} {
+            }
 
-          .logo-wrapper {
-            margin-left: 30px;
-          }
+            .logo-wrapper {
+              @media ${device.mobileS} {
+              }
+              @media ${device.tablet} {
+              }
+              @media ${device.laptop} {
+                margin-left: 30px;
+              }
+              @media ${device.desktop} {
+              }
+            }
 
-          .menu-wrapper {
-            margin-right: 30px;
-            margin-top: 20px;
-            cursor: pointer;
+            .menu-wrapper {
+              @media ${device.mobileS} {
+              }
+              @media ${device.tablet} {
+              }
+              @media ${device.laptop} {
+                margin-right: 30px;
+                margin-top: 20px;
+                cursor: pointer;
+              }
+              @media ${device.desktop} {
+              }
+            }
           }
         `}
       </style>
