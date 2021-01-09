@@ -13,7 +13,7 @@ export default function WeAreBranddded() {
           </h1>
           <h1 className="creative">
             A creative agency <br />
-            for growth-driven projects.
+            of growth-driven designers.
           </h1>
           <a href="mailto:weare@branddded.com">
             <button className="free">
@@ -42,10 +42,16 @@ export default function WeAreBranddded() {
             width: 80vw;
             top: 13vh;
           }
+          @media ${device.tablet} {
+            top: 10vh;
+          }
           @media ${device.laptop} {
             left: 10vw;
             top: 15vh;
             width: 50vw;
+          }
+          @media ${device.desktop} {
+            width: 60vw;
           }
         }
 
@@ -57,10 +63,16 @@ export default function WeAreBranddded() {
             line-height: 1;
             letter-spacing: -1px;
           }
+          @media ${device.tablet} {
+            font-size: 7.5vw;
+          }
           @media ${device.laptop} {
             font-size: 4.5vw;
             line-height: 1.1;
             letter-spacing: -1.5px;
+          }
+          @media ${device.desktop} {
+            font-size: 5vw;
           }
         }
 
@@ -72,6 +84,8 @@ export default function WeAreBranddded() {
             padding: 10px;
           }
           @media ${device.tablet} {
+            width: 70vw;
+            padding-left: 30px;
           }
           @media ${device.laptop} {
             width: auto;
@@ -80,6 +94,10 @@ export default function WeAreBranddded() {
             font-size: 22px;
           }
           @media ${device.desktop} {
+            width: 40vw;
+            height: 10vh;
+            font-size: 4vh;
+            padding: 40px;
           }
           display: flex;
           background-color: #fffafa;
@@ -99,6 +117,10 @@ export default function WeAreBranddded() {
 
             padding-left: 30px;
           }
+          @media ${device.tablet} {
+            margin-top: 600px;
+            height: 80vh;
+          }
           @media ${device.laptop} {
             width: auto;
             height: auto;
@@ -108,16 +130,22 @@ export default function WeAreBranddded() {
         }
 
         .hero-big_text {
+          font-family: ZonaBlack;
           @media ${device.mobileS} {
             position: absolute;
             margin-top: -250px;
             padding-top: 200px;
+          }
+          @media ${device.tablet} {
           }
           @media ${device.mobileS} {
             position: absolute;
             width: auto;
             overflow-x: visible;
             padding-top: auto;
+          }
+          @media ${device.desktop} {
+            margin-left: -500px;
           }
         }
 
@@ -133,6 +161,9 @@ export default function WeAreBranddded() {
             letter-spacing: -6px;
           }
           @media ${device.tablet} {
+            padding-top: 30px;
+            line-height: 120px;
+            font-size: 230px;
           }
           @media ${device.laptop} {
             line-height: 170px;
@@ -150,6 +181,9 @@ export default function WeAreBranddded() {
             font-weight: 900;
           }
           @media ${device.desktop} {
+            font-size: calc(10em + 20vw);
+            line-height: 325px;
+            letter-spacing: -35px;
           }
           position: relative;
           z-index: 999;

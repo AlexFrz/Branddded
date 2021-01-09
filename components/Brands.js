@@ -121,6 +121,8 @@ const Brands = () => {
               height: 62vh;
             }
             @media ${device.tablet} {
+              margin-top: 110vh;
+              width: 100vw;
             }
             @media ${device.laptop} {
               left: 280vw;
@@ -132,6 +134,10 @@ const Brands = () => {
               padding-top: 15px;
             }
             @media ${device.desktop} {
+              left: 310vw;
+              height: 101vh;
+              width: 900px;
+              top: -10px;
             }
             position: absolute;
             background: #1b1b1b;
@@ -151,6 +157,8 @@ const Brands = () => {
               margin-left: -25px;
             }
             @media ${device.tablet} {
+              padding: 20px 40px;
+              margin-left: 70px;
             }
             @media ${device.laptop} {
               padding: 25px;
@@ -158,6 +166,7 @@ const Brands = () => {
               padding-left: auto;
             }
             @media ${device.desktop} {
+              width: 450px;
             }
           }
 
@@ -170,6 +179,8 @@ const Brands = () => {
               padding-right: 5px;
             }
             @media ${device.tablet} {
+              padding: 20px 40px;
+              margin-left: 30px;
             }
             @media ${device.laptop} {
               padding: 27.5px;

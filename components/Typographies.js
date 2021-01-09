@@ -30,6 +30,7 @@ export default function Typographies() {
               left: 180vw;
             }
             @media ${device.desktop} {
+              left: 230vw;
             }
             position: absolute;
           }
@@ -44,6 +45,9 @@ export default function Typographies() {
               z-index: -1;
             }
             @media ${device.tablet} {
+              font-size: 800px;
+              width: 335px;
+              right: -435px;
             }
             @media ${device.laptop} {
               width: auto;
@@ -54,6 +58,12 @@ export default function Typographies() {
               font-size: 900px;
             }
             @media ${device.desktop} {
+              width: auto;
+              position: absolute;
+              margin-left: 1350px;
+              right: auto;
+              top: -500px;
+              font-size: 1600px;
             }
 
             font-family: Futura;
@@ -70,6 +80,9 @@ export default function Typographies() {
               letter-spacing: -7px;
             }
             @media ${device.tablet} {
+              font-size: 130px;
+              margin-left: -240px;
+              margin-top: -600px;
             }
             @media ${device.laptop} {
               margin-left: 500px;
@@ -80,6 +93,12 @@ export default function Typographies() {
               margin-top: auto;
             }
             @media ${device.desktop} {
+              margin-left: -20px;
+              top: 500px;
+              letter-spacing: -30px;
+              font-size: 300px;
+
+              margin-top: auto;
             }
             color: #fffafa;
             transform: rotate(-90deg);
@@ -92,12 +111,17 @@ export default function Typographies() {
           }
 
           .light {
+            font-family: Futura;
+            font-weight: 300;
             @media ${device.mobileS} {
               font-size: 25px;
               margin-top: -155px;
               margin-left: 5px;
             }
             @media ${device.tablet} {
+              font-size: 32.5px;
+              margin-top: -200px;
+              margin-left: 25px;
             }
             @media ${device.laptop} {
               margin-left: 680px;
@@ -106,6 +130,10 @@ export default function Typographies() {
               margin-top: auto;
             }
             @media ${device.desktop} {
+              margin-left: 520px;
+              font-size: 80px;
+              top: 1350px;
+              margin-top: auto;
             }
             color: #fffafa;
             position: absolute;
@@ -126,6 +154,10 @@ export default function Typographies() {
               top: 550px;
             }
             @media ${device.desktop} {
+              height: 300px;
+              width: 300px;
+              margin-left: 1850px;
+              top: 1300px;
             }
           }
           .square {
@@ -136,6 +168,8 @@ export default function Typographies() {
               margin-left: -90px;
             }
             @media ${device.tablet} {
+              height: 600px;
+              width: 600px;
             }
             @media ${device.laptop} {
               height: 70vh;
@@ -146,6 +180,12 @@ export default function Typographies() {
               font-size: 35px;
             }
             @media ${device.desktop} {
+              height: 70vh;
+              width: 70vh;
+              margin-top: auto;
+              margin-left: 28vw;
+              top: 70vh;
+              font-size: 35px;
             }
             border-radius: 100%;
             background-color: #1e1e1e;
@@ -163,6 +203,11 @@ export default function Typographies() {
               margin-top: 80px;
             }
             @media ${device.tablet} {
+              font-size: 65px;
+              line-height: 50px;
+              text-align: left;
+              margin-left: 160px;
+              margin-top: 60px;
             }
             @media ${device.laptop} {
               margin-left: auto;
@@ -173,6 +218,10 @@ export default function Typographies() {
               letter-spacing: -5px;
             }
             @media ${device.desktop} {
+              font-size: 150px;
+              line-height: 120px;
+              left: 240px;
+              margin-top: 150px;
             }
           }
           .works {

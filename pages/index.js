@@ -16,7 +16,14 @@ import SocialNetworks from "../components/SocialNetworks";
 import Ourblog from "../components/Ourblog";
 import { device } from "../styles/device";
 
-const GlobalStyle = createGlobalStyle`
+export default function Home() {
+  const GlobalStyle = createGlobalStyle`
+          @font-face {
+            font-family: "ZonaBlack";
+            src: url("/fonts/Zona\ Black.ttf");
+            font-weight: 900;
+            font-style: normal;
+          }
 
         html {
                     @media ${device.mobileS} {
@@ -51,10 +58,10 @@ const GlobalStyle = createGlobalStyle`
             }
 
             margin: 0;
-            font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI,
+            font-family: ZonaBlack, "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI,
             Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
             Helvetica Neue, sans-serif;
-            background-color: ${(props) => props.theme.background};
+            background-color: #E64445;
         }
 
 
@@ -96,7 +103,7 @@ const GlobalStyle = createGlobalStyle`
             }
     
 
-            color: ${(props) => props.theme.text};
+            color: #FAF8F2 ;
         }
 
         main {
@@ -157,17 +164,18 @@ const GlobalStyle = createGlobalStyle`
         }
 
         .hero-big_text h1 {
-          color: ${(props) => props.theme.background};
-          -webkit-text-stroke: 2px ${(props) => props.theme.text};
+          color: #E64445;
+          -webkit-text-stroke: 2px #FAF8F2;
         }
 
         .--- {
           letter-spacing: -10px;
           font-weight: 900;
+          @media ${device.desktop} {
+            letter-spacing: -15px;
+          }
         }
 `;
-
-export default function Home() {
   let tl = new TimelineLite({ delay: 0.3 });
 
   useEffect(() => {

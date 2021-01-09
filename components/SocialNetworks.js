@@ -78,6 +78,7 @@ export default function SocialNetworks() {
               top: 400vh;
             }
             @media ${device.tablet} {
+              top: 425vh;
             }
             @media ${device.laptop} {
               top: auto;
@@ -86,6 +87,7 @@ export default function SocialNetworks() {
               height: 102vh;
             }
             @media ${device.desktop} {
+              left: 350vw;
             }
             position: absolute;
           }
@@ -98,6 +100,7 @@ export default function SocialNetworks() {
               max-width: 100vw;
             }
             @media ${device.tablet} {
+              font-size: 75px;
             }
             @media ${device.laptop} {
               margin-top: auto;
@@ -107,6 +110,9 @@ export default function SocialNetworks() {
               left: 150px;
             }
             @media ${device.desktop} {
+              margin-top: 20vh;
+              font-size: 250px;
+              letter-spacing: -10px;
             }
             position: relative;
             font-family: Futura;
@@ -119,6 +125,8 @@ export default function SocialNetworks() {
               margin-bottom: -8px;
             }
             @media ${device.tablet} {
+              font-size: 35px;
+              margin-bottom: 10px;
             }
             @media ${device.laptop} {
               font-size: 40px;
@@ -126,6 +134,8 @@ export default function SocialNetworks() {
               margin-left: 4px;
             }
             @media ${device.desktop} {
+              font-size: 90px;
+              margin-bottom: 60px;
             }
             position: relative;
             display: flex;
@@ -139,6 +149,9 @@ export default function SocialNetworks() {
               margin-left: 0px;
             }
             @media ${device.tablet} {
+              height: 26px;
+              width: 550px;
+              margin-left: -2.5px;
             }
             @media ${device.laptop} {
               height: 30px;
@@ -146,6 +159,9 @@ export default function SocialNetworks() {
               margin-left: -2.5px;
             }
             @media ${device.desktop} {
+              letter-spacing: -2px;
+              height: 70px;
+              width: 1920px;
             }
             background-color: #fffafa;
           }
@@ -170,12 +186,16 @@ export default function SocialNetworks() {
               margin-top: 9px;
             }
             @media ${device.tablet} {
+              font-size: 110px;
+              margin-top: 37px;
             }
             @media ${device.laptop} {
               font-size: 144px;
               margin-top: 15.5px;
             }
             @media ${device.desktop} {
+              font-size: 344px;
+              margin-top: 150.5px;
             }
           }
 
@@ -187,6 +207,9 @@ export default function SocialNetworks() {
               left: 145.5px;
             }
             @media ${device.tablet} {
+              width: 15px;
+              left: 273px;
+              margin-top: -375px;
             }
             @media ${device.laptop} {
               height: 450px;
@@ -196,6 +219,11 @@ export default function SocialNetworks() {
               top: -600px;
             }
             @media ${device.desktop} {
+              height: 800px;
+              width: 50px;
+              margin-top: -500px;
+              left: 33.5vw;
+              top: -600px;
             }
             position: relative;
             background-color: #1e1e1e;
@@ -209,6 +237,8 @@ export default function SocialNetworks() {
               margin-top: -200px;
             }
             @media ${device.tablet} {
+              width: 13px;
+              left: 82.5vw;
             }
             @media ${device.laptop} {
               height: 350px;
@@ -218,6 +248,11 @@ export default function SocialNetworks() {
               left: 65.9vw;
             }
             @media ${device.desktop} {
+              height: 800px;
+              width: 49px;
+              margin-top: -500px;
+              left: 66.2vw;
+              top: -900px;
             }
             position: relative;
             z-index: -1;
@@ -234,6 +269,7 @@ export default function SocialNetworks() {
               left: 0.92vw;
             }
             @media ${device.tablet} {
+              width: 23px;
             }
             @media ${device.laptop} {
               position: relative;
@@ -245,6 +281,11 @@ export default function SocialNetworks() {
               left: 0.9vw;
             }
             @media ${device.desktop} {
+              height: 800px;
+              width: 69px;
+              margin-top: -500px;
+              left: 1vw;
+              top: -20px;
             }
           }
 
@@ -259,6 +300,8 @@ export default function SocialNetworks() {
               left: 25vw;
             }
             @media ${device.tablet} {
+              width: 23px;
+              left: 23.5vw;
             }
             @media ${device.laptop} {
               position: absolute;
@@ -269,6 +312,11 @@ export default function SocialNetworks() {
               left: 18.57vw;
             }
             @media ${device.desktop} {
+              height: 800px;
+              width: 69px;
+              margin-top: -500px;
+              left: 21vw;
+              top: 870px;
             }
           }
 
@@ -282,6 +330,8 @@ export default function SocialNetworks() {
               left: 63.6vw;
             }
             @media ${device.tablet} {
+              width: 22px;
+              left: 60vw;
             }
             @media ${device.laptop} {
               position: absolute;
@@ -292,6 +342,11 @@ export default function SocialNetworks() {
               left: 47.19vw;
             }
             @media ${device.desktop} {
+              height: 800px;
+              width: 69px;
+              margin-top: -500px;
+              left: 53.5vw;
+              top: 870px;
             }
           }
 
@@ -302,6 +357,7 @@ export default function SocialNetworks() {
             @media ${device.tablet} {
             }
             @media ${device.laptop} {
+              opacity: 1;
               position: absolute;
               color: #fffafa;
               font-size: 20px;
@@ -310,6 +366,7 @@ export default function SocialNetworks() {
               left: 43vh;
             }
             @media ${device.desktop} {
+              opacity: 0;
             }
           }
 
@@ -320,6 +377,7 @@ export default function SocialNetworks() {
             @media ${device.tablet} {
             }
             @media ${device.laptop} {
+              opacity: 1;
               position: absolute;
               color: #fffafa;
               font-size: 20px;
@@ -329,6 +387,7 @@ export default function SocialNetworks() {
               transform: rotate(-90deg);
             }
             @media ${device.desktop} {
+              opacity: 0;
             }
           }
 
@@ -339,6 +398,7 @@ export default function SocialNetworks() {
             @media ${device.tablet} {
             }
             @media ${device.laptop} {
+              opacity: 1;
               position: absolute;
               color: #fffafa;
               font-size: 20px;
@@ -348,6 +408,7 @@ export default function SocialNetworks() {
               transform: rotate(-90deg);
             }
             @media ${device.desktop} {
+              opacity: 0;
             }
           }
 
@@ -357,6 +418,8 @@ export default function SocialNetworks() {
               margin-left: -30px;
             }
             @media ${device.tablet} {
+              top: 190px;
+              margin-left: 135px;
             }
             @media ${device.laptop} {
               top: 450px;
@@ -364,6 +427,9 @@ export default function SocialNetworks() {
               width: 900px;
             }
             @media ${device.desktop} {
+              top: 1150px;
+              margin-left: 750px;
+              width: 900px;
             }
             display: flex;
             list-style: none;
@@ -383,6 +449,9 @@ export default function SocialNetworks() {
               margin: 22px;
             }
             @media ${device.desktop} {
+              padding: 30px;
+
+              margin: 40px;
             }
             border-radius: 100%;
             background: #1e1e1e;

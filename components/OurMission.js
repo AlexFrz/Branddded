@@ -69,8 +69,8 @@ function OurMission() {
       <style jsx>{`
         .triangle {
           @media ${device.mobileS} {
-            width: 102vw;
-            height: 250vh;
+            width: 100vw;
+            height: 290vh;
             top: 130vh;
             left: 0;
             clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
@@ -85,6 +85,7 @@ function OurMission() {
             clip-path: polygon(11% 0, 100% 0%, 100% 100%, 22% 100%);
           }
           @media ${device.desktop} {
+            left: 130vw;
           }
           z-index: -1;
           position: absolute;
@@ -117,6 +118,9 @@ function OurMission() {
             margin-left: 20px;
           }
           @media ${device.tablet} {
+            font-size: 80px;
+            width: 80vw;
+            padding: 30px;
           }
           @media ${device.laptop} {
             position: absolute;
@@ -129,6 +133,8 @@ function OurMission() {
             letter-spacing: -3px;
           }
           @media ${device.desktop} {
+            font-size: 150px;
+            width: 1200px;
           }
 
           color: #e64445;
@@ -146,6 +152,10 @@ function OurMission() {
             line-height: 35px;
           }
           @media ${device.tablet} {
+            height: 400px;
+            width: 400px;
+            top: -100px;
+            left: -80px;
           }
           @media ${device.laptop} {
             position: absolute;
@@ -158,6 +168,10 @@ function OurMission() {
             padding-top: 2.5%;
           }
           @media ${device.desktop} {
+            top: 0px;
+            left: 60px;
+            height: 800px;
+            width: 800px;
           }
           border-radius: 100%;
           background-color: rgba(230, 21, 22, 0.76);
@@ -177,6 +191,8 @@ function OurMission() {
             text-align: left;
           }
           @media ${device.tablet} {
+            padding-left: 110px;
+            padding-top: 200px;
           }
           @media ${device.laptop} {
             padding-left: 0;
@@ -188,6 +204,10 @@ function OurMission() {
             line-height: 65px;
           }
           @media ${device.desktop} {
+            margin-left: 200px;
+            margin-top: 100px;
+            font-size: 130px;
+            line-height: 90px;
           }
         }
 
@@ -217,6 +237,10 @@ function OurMission() {
             margin-top: -55vh;
           }
           @media ${device.tablet} {
+            font-size: 140px;
+            line-height: 80px;
+
+            margin-top: -50vh;
           }
           @media ${device.laptop} {
             margin-top: 0;
@@ -229,6 +253,7 @@ function OurMission() {
             line-height: 260px;
           }
           @media ${device.desktop} {
+            font-size: 200px;
           }
           position: absolute;
           color: #fcf4ec;
@@ -245,6 +270,10 @@ function OurMission() {
             line-height: 32px;
           }
           @media ${device.tablet} {
+            margin-top: -55vh;
+            font-size: 30px;
+            line-height: 40px;
+            margin-left: 10px;
           }
           @media ${device.laptop} {
             display: flex;
@@ -257,6 +286,14 @@ function OurMission() {
             line-height: 32px;
           }
           @media ${device.desktop} {
+            display: flex;
+            margin-top: 0;
+
+            top: 800px;
+            margin-left: -200px;
+
+            font-size: 70px;
+            line-height: 80px;
           }
           position: absolute;
           list-style: none;
@@ -271,12 +308,14 @@ function OurMission() {
           @media ${device.mobileS} {
           }
           @media ${device.tablet} {
+            padding: 5px;
           }
           @media ${device.laptop} {
             padding: 15px;
             width: 450px;
           }
           @media ${device.desktop} {
+            width: 1000px;
           }
         }
 
@@ -297,6 +336,7 @@ function OurMission() {
             margin-right: 7.5px;
           }
           @media ${device.tablet} {
+            margin-right: 13px;
           }
           @media ${device.laptop} {
             font-weight: bold;
@@ -316,6 +356,9 @@ function OurMission() {
             margin-left: 20px;
           }
           @media ${device.tablet} {
+            margin-left: 40px;
+            width: 70vw;
+            padding-left: 30px;
           }
           @media ${device.laptop} {
             padding: 20px 50px;
@@ -329,6 +372,10 @@ function OurMission() {
             font-size: 24px;
           }
           @media ${device.desktop} {
+            width: 40vw;
+            height: 10vh;
+            font-size: 4vh;
+            padding: 40px;
           }
           position: absolute;
           background-color: #e64445;
@@ -351,6 +398,7 @@ function OurMission() {
             margin-left: -15px;
           }
           @media ${device.tablet} {
+            width: 160px;
           }
           @media ${device.laptop} {
             width: 220px;
@@ -360,6 +408,11 @@ function OurMission() {
             top: 60px;
           }
           @media ${device.desktop} {
+            width: 350px;
+            height: 110vh;
+            margin-left: 1850px;
+            margin-top: auto;
+            top: 60px;
           }
           position: absolute;
           background-color: #1e1e1e;

@@ -19,8 +19,6 @@ function TheHeader() {
 
       <style jsx>
         {`
-          @import "../styles/breakpoints.global.css";
-
           .theheader {
             @media ${device.mobileS} {
               display: flex;
@@ -40,10 +38,12 @@ function TheHeader() {
               justify-content: space-between;
             }
             @media ${device.desktop} {
+              font-size: 3em;
             }
 
             .logo-wrapper {
               @media ${device.mobileS} {
+                margin-left: 20px;
               }
               @media ${device.tablet} {
               }
@@ -58,6 +58,7 @@ function TheHeader() {
               @media ${device.mobileS} {
               }
               @media ${device.tablet} {
+                margin-right: 50px;
               }
               @media ${device.laptop} {
                 margin-right: 30px;

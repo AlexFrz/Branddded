@@ -23,6 +23,7 @@ function HamburgerMenu() {
               transform: rotate(90deg);
             }
             @media ${device.desktop} {
+              padding: 30px;
             }
             background: none;
             border: none;
@@ -36,6 +37,9 @@ function HamburgerMenu() {
             @media ${device.laptop} {
             }
             @media ${device.desktop} {
+              width: 70px;
+              height: 15px;
+              margin: 20px;
             }
             width: 36px;
             height: 8px;
