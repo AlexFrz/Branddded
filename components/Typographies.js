@@ -27,7 +27,7 @@ export default function Typographies() {
             @media ${device.tablet} {
             }
             @media ${device.laptop} {
-              left: 180vw;
+              left: 305vw;
             }
             @media ${device.desktop} {
               left: 230vw;
@@ -100,6 +100,7 @@ export default function Typographies() {
 
               margin-top: auto;
             }
+
             color: #fffafa;
             transform: rotate(-90deg);
             position: absolute;
@@ -111,7 +112,7 @@ export default function Typographies() {
           }
 
           .light {
-            font-family: Futura;
+            font-family: "Poppins";
             font-weight: 300;
             @media ${device.mobileS} {
               font-size: 25px;
@@ -124,7 +125,7 @@ export default function Typographies() {
               margin-left: 25px;
             }
             @media ${device.laptop} {
-              margin-left: 680px;
+              margin-left: 690px;
               font-size: 30px;
               top: 490px;
               margin-top: auto;
@@ -175,7 +176,7 @@ export default function Typographies() {
               height: 70vh;
               width: 70vh;
               margin-top: auto;
-              margin-left: 55vw;
+              margin-left: 45vw;
               top: 70vh;
               font-size: 35px;
             }
@@ -213,7 +214,7 @@ export default function Typographies() {
               margin-left: auto;
               position: absolute;
               margin-top: 90px;
-              left: 100px;
+              left: 150px;
               line-height: 45px;
               letter-spacing: -5px;
             }

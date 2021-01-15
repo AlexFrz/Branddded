@@ -125,8 +125,8 @@ const Brands = () => {
               width: 100vw;
             }
             @media ${device.laptop} {
-              left: 280vw;
-              top: 5px;
+              left: 395vw;
+              top: 0px;
               margin-top: auto;
               margin-left: auto;
               height: 101vh;

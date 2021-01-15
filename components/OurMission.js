@@ -1,76 +1,116 @@
-import React from "react";
+import React, { useState } from "react";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import { device } from "../styles/device";
+import { useEffect } from "react";
+import Mission from "./Mission";
 
 function OurMission() {
+  const listOfMissions = [
+    {
+      name: "Build an impactful brand identity",
+      handle: "Branding",
+      description:
+        "Together, we'll design the experience, the story you'll share to the world. An inspiring brand can lead people to take action, and dream with you. ",
+      image: "/icons/branding.png",
+    },
+    {
+      name: "Turn your idea into an experience",
+      handle: "User Experience",
+      description:
+        "We design user experiences and interfaces they'll love to use.",
+      image: "/icons/ux.png",
+    },
+    {
+      name: "Start to sell your products online",
+      handle: "Shopping Experience",
+      description:
+        "We build up your e-commerce interface and landing pages, optimized for high conversion rates.",
+      image: "/icons/shop.png",
+    },
+    {
+      name: "We code all the features you need",
+      handle: "Programming",
+      image: "/icons/responsive.png",
+      description:
+        "Developping from A to Z your website, using the latest technologies of computer science.",
+    },
+    {
+      name: "Sublime your products",
+      handle: "Photography",
+      image: "/icons/picture.png",
+      description:
+        "We take pictures of your products in order to show the most value to your clients.",
+    },
+    {
+      name: "Be everywhere, and go viral on Social Medias",
+      handle: "Content strategy",
+      image: "/icons/socials.png",
+      description:
+        "We'll create a content strategy for Instagram, Twitter and Facebook to go viral.",
+    },
+    {
+      name: "Generate a lot of trafic thanks to SEO",
+      handle: "Search Engine Optimization",
+      image: "/icons/seo.png",
+      description:
+        "We'll implement techniques to make you rank higher on Google search.",
+    },
+    {
+      name: "Acquire and turn visitors into custommers.",
+      handle: "Growth hacking",
+      image: "/icons/growth.png",
+      description:
+        "We use growth hacking techniques to generate the maximum amount of leads in the minimum amount of time. Acquisition, convertion, retention and referal strategies.",
+    },
+  ];
+  const [missions] = useState(listOfMissions);
+  useEffect(() => {
+    console.log(missions);
+  }, []);
+
   return (
     <>
       <div className="triangle">
         <h3 className="experiences">We design experiences</h3>
         <div className="redband">
           <h1>
-            Our <span className="---">------</span> <br />
+            Our <span className="---">----</span> <br />
             <span className="missions">mission.</span>
           </h1>
         </div>
       </div>
 
+      <div className="agency__description">
+        <p>
+          We want big ideas to be heard, and good products to be sold. Our main
+          goal is to make you go viral quickly, and expand worldwide. We
+          specialize in Acquisition & Conversion.
+        </p>
+      </div>
+
       <div className="monogirl">
-        <div className="goviral">GO VIRAL</div>
-        <h1 className="bigideas">We give superpowers to your ideas.</h1>
+        {/* <div className="goviral">GO VIRAL</div> */}
+
         <div className="croped"></div>
 
-        <ul className="missions-list">
-          <div className="first-column">
-            <li>
-              <span className="bullet">I</span>Create your{" "}
-              <strong>brand identity</strong>.
-            </li>
-            <li>
-              <span className="bullet">I</span>Imagine <strong>UX</strong>{" "}
-              they'll love to use.
-            </li>
-            <li>
-              <span className="bullet">I</span>Develop responsive{" "}
-              <strong>websites</strong>.
-            </li>
-            <li>
-              <span className="bullet">I</span>Craft{" "}
-              <strong>shopping experiences</strong>.
-            </li>
-          </div>
-          <div className="second-column">
-            <li>
-              <span className="bullet">I</span>Take <strong>pictures</strong> of
-              your products.
-            </li>
-            <li>
-              <span className="bullet">I</span>Build{" "}
-              <strong>social media</strong> presence.
-            </li>
-            <li>
-              <span className="bullet">I</span>Optimize{" "}
-              <strong>SEO and traffic</strong>.
-            </li>
-            <li>
-              <span className="bullet">I</span>Implement{" "}
-              <strong>growth hacking</strong> strategies that will make you go
-              viral.
-            </li>
-          </div>
+        <ul className="missions__list__wrapper">
+          {" "}
+          {missions.map((mission) => (
+            <Mission mission={mission} />
+          ))}
+          <a href="mailto:weare@branddded.com">
+            <button className="cta-call">
+              CONTACT US <ArrowRightIcon fontSize="large" />
+            </button>
+          </a>
         </ul>
-        <a href="mailto:weare@branddded.com">
-          <button className="cta-call">
-            CONTACT US <ArrowRightIcon fontSize="large" />
-          </button>
-        </a>
       </div>
 
       <style jsx>{`
         .triangle {
           @media ${device.mobileS} {
             width: 100vw;
-            height: 290vh;
+            height: 250vh;
             top: 130vh;
             left: 0;
             clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
@@ -79,9 +119,9 @@ function OurMission() {
           }
           @media ${device.laptop} {
             top: 0;
-            left: 100vw;
+            left: 76vw;
             height: 101vh;
-            width: 200vw;
+            width: 320vw;
             clip-path: polygon(11% 0, 100% 0%, 100% 100%, 22% 100%);
           }
           @media ${device.desktop} {
@@ -108,7 +148,7 @@ function OurMission() {
           }
         }
 
-        .bigideas {
+        .superpowers {
           @media ${device.mobileS} {
             position: relative;
             top: -50vh;
@@ -126,9 +166,10 @@ function OurMission() {
             position: absolute;
             padding: 20px;
             margin-left: 150px;
-            width: 500px;
-            top: 50px;
-            font-size: 60px;
+            width: 1350px;
+            top: 90px;
+            left: 400px;
+            font-size: 75px;
             line-height: 0.95;
             letter-spacing: -3px;
           }
@@ -141,7 +182,9 @@ function OurMission() {
           z-index: 999;
           font-weight: 700;
         }
-
+        li {
+          list-style: none;
+        }
         .redband {
           @media ${device.mobileS} {
             height: 300px;
@@ -160,10 +203,10 @@ function OurMission() {
           @media ${device.laptop} {
             position: absolute;
             z-index: 2;
-            height: 500px;
-            width: 500px;
-            top: -150px;
-            margin-left: 475px;
+            height: 550px;
+            width: 550px;
+            top: -200px;
+            margin-left: 800px;
             font-size: 35px;
             padding-top: 2.5%;
           }
@@ -175,7 +218,7 @@ function OurMission() {
           }
           border-radius: 100%;
           background-color: rgba(230, 21, 22, 0.76);
-          font-family: Futura;
+          font-family: "Poppins";
           font-weight: bold;
           position: absolute;
           justify-content: center;
@@ -211,6 +254,16 @@ function OurMission() {
           }
         }
 
+        .agency__description {
+          position: relative;
+          font-size: 23px;
+          width: 420px;
+          font-family: "Poppins";
+          color: black;
+          top: 330px;
+          left: 400px;
+        }
+
         .monogirl {
           @media ${device.mobileS} {
           }
@@ -244,10 +297,10 @@ function OurMission() {
           }
           @media ${device.laptop} {
             margin-top: 0;
-            left: 75px;
+            left: 700px;
             top: -30px;
             width: 1000px;
-            font-size: 130px;
+            font-size: 170px;
             margin-left: 0px;
             letter-spacing: -10px;
             line-height: 260px;
@@ -257,11 +310,11 @@ function OurMission() {
           }
           position: absolute;
           color: #fcf4ec;
-          font-family: Futura;
+          font-family: "Poppins";
           font-weight: bold;
         }
 
-        .missions-list {
+        .missions__list__wrapper {
           @media ${device.mobileS} {
             margin-top: -45vh;
             font-size: 20px;
@@ -276,14 +329,16 @@ function OurMission() {
             margin-left: 10px;
           }
           @media ${device.laptop} {
-            display: flex;
-            margin-top: 0;
-
-            top: 430px;
-            margin-left: -300px;
-
-            font-size: 28px;
-            line-height: 32px;
+            position: relative;
+            columns: 3;
+            rows: 3;
+            height: 90vh;
+            width: 150vw;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            top: 550px;
+            left: 300px;
           }
           @media ${device.desktop} {
             display: flex;
@@ -297,54 +352,11 @@ function OurMission() {
           }
           position: absolute;
           list-style: none;
-          font-family: Futura;
+          font-family: "Poppins";
           color: #1b1b1b;
         }
         .missions {
           color: #fffafa;
-        }
-
-        .missions-list li {
-          @media ${device.mobileS} {
-          }
-          @media ${device.tablet} {
-            padding: 5px;
-          }
-          @media ${device.laptop} {
-            padding: 15px;
-            width: 450px;
-          }
-          @media ${device.desktop} {
-            width: 1000px;
-          }
-        }
-
-        .second-column {
-          @media ${device.mobileS} {
-          }
-          @media ${device.tablet} {
-          }
-          @media ${device.laptop} {
-            margin-top: -140px;
-          }
-          @media ${device.desktop} {
-          }
-        }
-
-        .bullet {
-          @media ${device.mobileS} {
-            margin-right: 7.5px;
-          }
-          @media ${device.tablet} {
-            margin-right: 13px;
-          }
-          @media ${device.laptop} {
-            font-weight: bold;
-            margin-right: 15px;
-          }
-          @media ${device.desktop} {
-          }
-          color: #e64445;
         }
 
         .cta-call {
@@ -364,12 +376,9 @@ function OurMission() {
             padding: 20px 50px;
             height: 70px;
             width: 450px;
-            position: relative;
-
-            top: 90vh;
-            left: 16vw;
-
-            font-size: 24px;
+            font-size: 22px;
+            margin-left: 200px;
+            margin-top: 120px;
           }
           @media ${device.desktop} {
             width: 40vw;
@@ -380,7 +389,7 @@ function OurMission() {
           position: absolute;
           background-color: #e64445;
           display: flex;
-          font-family: "Montserrat", sans-serif;
+          font-family: "Poppins", sans-serif;
           align-items: center;
           text-align: center;
           cursor: pointer;
@@ -403,7 +412,7 @@ function OurMission() {
           @media ${device.laptop} {
             width: 220px;
             height: 110vh;
-            margin-left: 730px;
+            margin-left: 2700px;
             margin-top: auto;
             top: 60px;
           }
@@ -416,6 +425,10 @@ function OurMission() {
           }
           position: absolute;
           background-color: #1e1e1e;
+        }
+
+        li {
+          list-style: none;
         }
       `}</style>
     </>

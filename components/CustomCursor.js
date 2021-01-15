@@ -24,7 +24,6 @@ function CustomCursor() {
   const onMouseMove = (event) => {
     const { pageX: y, pageY: x } = event;
     setMousePosition({ y, reverseX });
-    console.log(mousePosition);
   };
 
   useEffect(() => {

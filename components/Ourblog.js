@@ -1,13 +1,14 @@
 import React from "react";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import { device } from "../styles/device";
+import Link from "next/link";
 
 export default function Ourblog() {
   return (
     <>
       <section className="ourblog">
         <h2 className="headofsection">
-          Our <span className="---">------</span> <br />
+          Our <span className="---">----</span> <br />
           <span className="articles">articles.</span>
         </h2>
         <h4 className="subtitleofsection">
@@ -43,9 +44,11 @@ export default function Ourblog() {
             this world.
           </p>
 
-          <div className="ourblogs__cta">
-            DIVE INTO OUR BLOG <ArrowRightIcon fontSize="large" />
-          </div>
+          <Link href="/posts">
+            <div className="ourblogs__cta">
+              DIVE INTO OUR BLOG <ArrowRightIcon fontSize="large" />
+            </div>
+          </Link>
         </div>
         <div className="endpoint">
           <h3>An idea? A project?</h3>
@@ -72,7 +75,7 @@ export default function Ourblog() {
               height: 200vh;
             }
             @media ${device.laptop} {
-              left: 400vw;
+              left: 500vw;
               height: 102vh;
               width: 185vw;
               top: 0;
@@ -183,7 +186,7 @@ export default function Ourblog() {
           }
 
           .ourblogs__paragraphs p {
-            font-family: Futura;
+            font-family: "Poppins";
             line-height: 1.2;
             @media ${device.mobileS} {
               padding-right: 40px;
@@ -241,7 +244,7 @@ export default function Ourblog() {
               height: 70px;
               width: 450px;
               position: relative;
-              margin-top: 135px;
+              margin-top: 170px;
               margin-left: 60px;
 
               font-size: 22px;
@@ -260,7 +263,7 @@ export default function Ourblog() {
             border: none;
             background-color: #1e1e1e;
             font-weight: bold;
-            font-family: "Montserrat", sans-serif;
+            font-family: "Poppins", sans-serif;
             align-items: center;
             text-align: center;
             cursor: pointer;
@@ -397,7 +400,7 @@ export default function Ourblog() {
           }
 
           .endpoint p {
-            font-family: Futura;
+            font-family: "Poppins";
             @media ${device.mobileS} {
               margin-left: 30px;
               margin-top: -15px;
@@ -452,7 +455,7 @@ export default function Ourblog() {
               font-size: 4vh;
               padding: 40px;
             }
-            font-family: "Montserrat", sans-serif;
+            font-family: "Poppins", sans-serif;
             align-items: center;
             text-align: center;
             cursor: pointer;

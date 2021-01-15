@@ -1,9 +1,10 @@
 import Head from "next/head";
 
 // Components
-import TheHeader from "../components/TheHeader";
+
 import WeAreBranddded from "../components/WeAreBranddded";
-import Image from "next/image";
+import Menu from "../components/Menu";
+
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import React, { useEffect, useState } from "react";
 import Cursor from "../components/CustomCursor";
@@ -15,6 +16,7 @@ import Brands from "../components/Brands";
 import SocialNetworks from "../components/SocialNetworks";
 import Ourblog from "../components/Ourblog";
 import { device } from "../styles/device";
+import dynamic from "next/dynamic";
 
 export default function Home() {
   const GlobalStyle = createGlobalStyle`
@@ -58,7 +60,7 @@ export default function Home() {
             }
 
             margin: 0;
-            font-family: ZonaBlack, "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI,
+            font-family: ZonaBlack, "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI,
             Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
             Helvetica Neue, sans-serif;
             background-color: #E64445;
@@ -161,6 +163,7 @@ export default function Home() {
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 1;
         }
 
         .hero-big_text h1 {
@@ -170,12 +173,20 @@ export default function Home() {
 
         .--- {
           letter-spacing: -10px;
+      font-family: "Poppins";
           font-weight: 900;
           @media ${device.desktop} {
             letter-spacing: -15px;
           }
+          
         }
 `;
+
+  const DynamicComponentWithNoSSR = dynamic(
+    () => import("../components/TheHeader"),
+    { ssr: false }
+  );
+
   let tl = new TimelineLite({ delay: 0.3 });
 
   useEffect(() => {
@@ -264,11 +275,12 @@ export default function Home() {
           <title>Branddded - Draw, Design, Develop</title>
           <link rel="icon" href="/favicon.ico" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           ></link>
         </Head>
-        <TheHeader />
+
+        <DynamicComponentWithNoSSR />
         <main>
           <WeAreBranddded />
           <OurMission />

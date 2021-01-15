@@ -8,7 +8,7 @@ export default function WeAreBranddded() {
       <div className="section one">
         <div className="hero-text-wrapper">
           <h1 className="weare">
-            We are <span className="---">--------</span> <br />
+            We are <span className="---">----</span> <br />
             <span className="Branddded">Branddded.</span>
           </h1>
           <h1 className="creative">
@@ -104,7 +104,7 @@ export default function WeAreBranddded() {
           border: none;
           color: rgba(230, 21, 22, 0.75);
           font-weight: bold;
-          font-family: "Montserrat", sans-serif;
+          font-family: "Poppins", sans-serif;
           align-items: center;
           cursor: pointer;
         }
@@ -171,8 +171,7 @@ export default function WeAreBranddded() {
             overflow-x: visible;
             margin-left: 250px;
             padding-top: auto;
-            left: -15vw;
-            margin-left: 0;
+            left: -4vw;
             top: 0;
             position: relative;
             z-index: 999;

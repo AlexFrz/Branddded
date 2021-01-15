@@ -1,13 +1,16 @@
 import React from "react";
 import Logo from "./Logo";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TheFooter() {
   return (
     <>
       <div className="thefooter">
         <div className="thefooter__headline">
-          <h1 className="together">Let's grow together</h1>
+          <Link href="/">
+            <h1 className="together">Let's grow together</h1>
+          </Link>
           <span className="line"> </span>
         </div>
         <div className="thefooter__bottomline">
@@ -41,7 +44,7 @@ export default function TheFooter() {
           left: 0;
           width: 100%;
           height: 500px;
-          margin-top: 50px;
+          margin-top: 100px;
           background-color: #faf8f2;
           color: #1e1e1e;
           text-align: center;

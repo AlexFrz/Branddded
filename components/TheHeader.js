@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
 import Logo from "./Logo";
 import { device } from "../styles/device";
@@ -6,15 +6,18 @@ import {
   useGlobalDispatchContext,
   useGlobalStateContext,
 } from "../context/globalContext";
+import Menu from "./Menu";
 
 function TheHeader() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="theheader">
       <div className="logo-wrapper">
         <Logo />
       </div>
       <div className="menu-wrapper">
-        <HamburgerMenu />
+        <HamburgerMenu open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} />
       </div>
 
       <style jsx>
@@ -25,6 +28,7 @@ function TheHeader() {
               justify-content: space-between;
               height: 10vh;
               width: 100vw;
+              z-index: 999;
             }
             @media ${device.tablet} {
             }

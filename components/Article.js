@@ -95,7 +95,7 @@ const Article = ({
                     </ul>
                   )}
                   <div className="date_time">
-                    {publishedAt}
+                    {new Date(publishedAt).toDateString()}
                     <br />
                     Reading time: 9min
                   </div>
@@ -166,7 +166,7 @@ const Article = ({
             margin-right: 40px;
           }
           article {
-            font-family: Futura, "Montserrat", -apple-system, BlinkMacSystemFont,
+            font-family: "Poppins", "Poppins", -apple-system, BlinkMacSystemFont,
               "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
               "Helvetica Neue", sans-serif;
             padding: 0;
